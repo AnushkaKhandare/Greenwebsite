@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- css link  -->
+    <link rel="stylesheet" href="khandare.css">
+
+
+
+    <style>
+      * {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+
+
+
+.wrapper {
+
+    
+   
+    justify-content: space-around;
+}
+
+.card {
+
+    width: 500px;
+    height: 730px;
+    padding: 2rem 1rem;
+    background: #fff;
+    position: relative;
+    
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px black;
+    transition: 0.5s ease-in-out;
+    margin: 10px;
+    margin-top: 40px ;
+    
+   
+
+}
+
+.card:hover {
+    transform: translateY(20px);
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgb(59, 63, 53));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+
+.card:hover:before {
+
+    opacity: 1;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
+}
+
+.info {
+
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+}
+
+.card:hover .info {
+
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.btn {
+    text-decoration: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+
+.imgpersonal{
+
+    width: 90%  ;
+    height: 100%  ; 
+    padding-left: 20px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    filter: drop-shadow(10px 10px 10px rgba(0 0 0 6));
+
+}
+
+
+@font-face {
+    font-family: myFont;
+    src: url(Aurora.ttf.otf);
+}
+
+* {
+            margin: 0;
+            padding: 0;
+        }
+
+        .background-image{
+
+            background-image: url(beigetextured.jpg);
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+           
+        }
+
+
+
+
+
+    </style>
+</head>
+<body class="background-image">
+
+    <!-- 1st row  -->
+
+
+
+    <div class="container row mx-auto p-0 m-0 " style="height: 15vh ; background-color: #312f2f ;">
+    
+    <h1 style="font-family: myFont; margin-left: 330px ; font-size: 55px; margin-top: 50px; color: #fff;">Typographic layouts </h1>
+    
+    </div>
+    <!-- 2nd row -->
+    
+    <div class="container row mx-auto m-0 p-0  ">
+
+        <div class="container row mx-auto  m-0 p-0 " style="height: 85vh ; background-color: #272727 ;">
+
+              <!-- 1st col -->
+            <div class="container col mx-auto  m-0 p-0 " style="height: 85vh ; background-color: #312f2f ;">
+            
+
+                <div class="wrapper">
+
+
+
+                    <div class="card">
+    
+                        <img src="Modularsushilayout.png" alt="cookies">
+                        <div class="info">
+    
+                            <h1 style="font-family: myFont; margin-left: px ; font-size: 55px; margin-top: px; color: #fff;"> Modular Layout </h1>
+                            <p style="font-size: 24px ;">I opted for a modular grid layout with tones of red and blue for the sushi recipe book to achieve a harmonious balance between structure and creativity. The modular grid offers a systematic organization of recipes, ensuring a cohesive and easy-to-follow layout for readers. This structure allows for consistent placement of ingredients, instructions, and visuals, enhancing the overall readability and user experience.</p>
+                            
+    
+                        </div>
+    
+    
+    
+                    </div>
+        </div>
+            
+            
+            
+            </div>
+
+            <div class="container col mx-auto  m-0 p-0 " style="height: 85vh ;background-color: #312f2f; ">
+            
+                <div class="wrapper">
+
+
+
+                    <div class="card">
+    
+                        <img src="Bluesushilayout.png" alt="cookies">
+                        <div class="info">
+    
+                            <h1 style="font-family: myFont; margin-left: px ; font-size: 55px; margin-top: px; color: #fff;"> Bilateral Layout </h1>
+                            <p style="font-size: 24px;">I opted for a bilateral layout with tones of white and blue for the sushi recipe book to convey a sense of simplicity, cleanliness, and a connection to the culinary tradition of Japan. The bilateral design brings a balanced and organized structure to the pages, echoing the precision and artistry involved in sushi preparation.</p>
+                            
+    
+                        </div>
+    
+    
+    
+                    </div>
+        </div>
+            
+            
+            
+            
+        </div>
+
+            
+
+
+    <!-- 3rd row  -->
+
+    <div class="container row mx-auto m-0 p-0  ">
+
+        <div class="container row mx-auto  m-0 p-0 " style="height: 85vh ; background-color: #312f2f ;">
+
+              <!-- 1st col -->
+            <div class="container col mx-auto  m-0 p-0 " style="height: 85vh ; background-color: #312f2f;">
+            
+
+                <div class="wrapper">
+
+
+
+                    <div class="card">
+    
+                        <img src="Greensushilayout.png" alt="cookies">
+                        <div class="info">
+    
+                            <h1 style="font-family: myFont; margin-left: px ; font-size: 55px; margin-top: px; color: #fff;">Axial <br> Layout </h1>
+                            <p style="font-size: 24px ;"> I chose an axial layout with tones of green for the sushi recipe book to evoke a sense of balance and harmony, mirroring the equilibrium found in traditional Japanese design.The choice of green tones aligns with the natural and fresh qualities associated with sushi ingredients like seaweed, avocado, and cucumber. This color palette not only reflects the vibrancy of these components but also conveys a connection to nature, enhancing the book's visual appeal and emphasizing the culinary focus on freshness. </p>
+                            
+    
+                        </div>
+    
+    
+    
+                    </div>
+        </div>
+            
+            
+            
+            </div>
+
+            
+            
+            
+            
+            
+        </div>
+
+
+
+    
+    
+</body>
+</html>
